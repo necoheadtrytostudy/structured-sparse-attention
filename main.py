@@ -110,4 +110,6 @@ def run_experiment(n=128, d=64, runs=5):
 # Run
 # ===============================
 if __name__ == "__main__":
-    run_experiment()
+    for n in [128, 256, 512]:
+        run_experiment(n=n, d=64)
+        print()
